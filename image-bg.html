@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>comz | Coming Soon Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<p class="top-text">
+	<span class="main-color">we are almost </span>
+	done with we are coming up with something
+	<span class="main-color"> original.</span>
+</p>
+<p class="message">
+	STAY TUNED<span class="main-color">!</span>
+</p>
+
+
+
+
+<div class="countdown">
+	<div class="element">
+		<span class="days"></span>
+		<p>DAYS</p>
+	</div>
+		<div class="element">
+		<span class="hours"></span>
+		<p>HOURS</p>
+	</div>
+		<div class="element">
+		<span class="minutes"></span>
+		<p>MINUTES</p>
+	</div>
+		<div class="element">
+		<span class="seconds"></span>
+		<p>SECONDS</p>
+	</div>
+</div>
+
+
+
+
+<div class="contact">
+	<p>Type your email address & get updates</p>
+
+
+		<form class="form-wrapper" method="post">
+						<input type="text" name="email" placeholder="Join Newsletter">
+						<button type="submit">SUBMIT</button>
+		</form>
+
+
+	<div class="social-icons">
+		<a href="#">
+			<span class="icon">
+			<i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+			</span>
+		</a>
+		<a href="#">
+			<span class="icon">
+			<i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+			</span>
+		</a>
+		<a href="#">
+			<span class="icon">
+			<i class="fa fa-google-plus fa-fw" aria-hidden="true"></i>
+			</span>
+		</a>
+		<a href="#">
+			<span class="icon">
+			<i class="fa fa-dribbble fa-fw" aria-hidden="true"></i>
+			</span>
+		</a>
+		<a href="#">
+			<span class="icon">
+			<i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>
+			</span>
+		</a>
+	</div>
+
+
+
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+<script src="js/jquery.backstretch.js"></script>
+
+
+<script>
+	$.backstretch("images/1.jpg");
+</script>
+<script type="text/javascript">
+	$('.countdown').countdown('2017/03/07', function(event) {
+	$('.days').html(event.strftime('%D'));
+	$('.hours').html(event.strftime('%H'));
+	$('.minutes').html(event.strftime('%M'));
+	$('.seconds').html(event.strftime('%S'));
+	});
+</script>
+
+
+
+
+</body>
+</html>
