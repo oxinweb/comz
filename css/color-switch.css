@@ -1,0 +1,58 @@
+
+#btn {
+  position: fixed;
+  z-index: 5;
+  top: 165px;
+  left: 0px;
+  cursor: pointer;
+  -webkit-transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+  transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+	background-color: #F45050;
+}
+#btn i{
+	font-size: 24px;
+	color: #fff;
+}
+
+
+#btn.active {
+	left: 275px;
+	top: 165px;
+}
+
+
+
+
+#box {
+  position: fixed;
+  z-index: 4;
+  overflow: inherit;
+  top: 165px;
+  left: -275px;
+  width: 275px;
+	height: 150px;
+  opacity: 0;
+  padding: 20px 0px;
+  background-color: #fff;
+  color: #343838;
+  -webkit-transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+  transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+#box.active {
+  left: 0px;
+  opacity: 1;
+	height: 150px;
+}
+.colors {
+	line-height: 4;
+}
+.colors a{
+	background-color: red;
+	padding: 5px 15px;
+	margin-left: 15px;
+	cursor: pointer;
+	display: inline-block;
+	width: 10px;
+	height: 25px;
+}
